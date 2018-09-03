@@ -5,6 +5,7 @@ I did not want to make separate repos for all the projects. My learning has been
 The projects described below are the 'final' versions (for demo purposes) achieved over an iterative process. See the additional links for the related started/iterated projects.
 
 [Mobile Repo](https://github.com/sparkydasrath/mobile)
+
 [All webdev related repo](https://github.com/sparkydasrath/webdev)
 
 1. Flutter Crypto Compare
