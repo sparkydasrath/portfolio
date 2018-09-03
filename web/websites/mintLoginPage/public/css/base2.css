@@ -1,0 +1,24 @@
+div {
+    width: 300px;
+}
+
+#one {
+    width: 100px;
+    height: 100px;
+    display: inline;
+    border: 1px dotted red;
+}
+
+#two {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    border: 1px dotted red;
+}
+
+#three {
+    width: 100px;
+    height: 100px;
+    display: block;
+    border: 1px dotted red;
+}

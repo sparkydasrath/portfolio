@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Todo v1 pure html css js</title>
+    <link rel="stylesheet" type="text/css" href="../public/css/base.css" />
+    <link rel="stylesheet" type="text/css" href="../node_modules/mdbootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../node_modules/mdbootstrap/css/mdb.css" />
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/handlebars/dist/handlebars.js"></script>
+    <script src="../node_modules/mdbootstrap/js/bootstrap.js"></script>
+    <script src="../node_modules/mdbootstrap/js/mdb.js"></script>
+    <script src="../node_modules/mdbootstrap/js/mdb.js"></script>
+</head>
+
+<body>
+
+    <div class="rootContainer">
+        <br>
+        <div class="todo-container">
+            <div id="input-text-wrapper">
+                <input type="text" id="input-text" class="form-control" placeholder="Enter to do...">
+            </div>
+
+            <div id="list-commands"></div>
+
+            <div id="todo-items-container"></div>
+
+            <script id="todoItemTemplate" type="text/x-handlebars-template">
+                {{#each this}} {{#if isCompleted}}
+
+                <div class="todo-item-container done">
+                    <span class="todoText">{{todoText}}</span>
+                    <button class="btn btn-default delete" disabled>
+                        Done!
+                    </button>
+                    <button class="btn btn-default delete">
+                        Delete
+                    </button>
+                </div>
+                {{else}}
+                <div class="todo-item-container">
+                    <span class="todoText">{{todoText}}</span>
+                    <button class="btn btn-default complete">
+                        Complete
+                    </button>
+                    <button class="btn btn-default delete">
+                        Delete
+                    </button>
+                </div>
+
+                {{/if}} {{/each}}
+            </script>
+        </div>
+
+        <br>
+        <hr>
+
+        <div id="actions" class="btn-group" role="group">
+            <button class="btn btn-primary" id="delete-all-completed">Delete Completed</button>
+            <button class="btn btn-primary" id="delete-all">Delete All </button>
+            <button class="btn btn-primary" id="show-hide-completed">Toggle Completed</button>
+        </div>
+
+        <div id="command-bar">
+            <div id="counts"></div>
+        </div>
+    </div>
+
+    <script src="../public/js/Todo.js"></script>
+    <script src="../public/js/app.js"></script>
+</body>
+
+</html>

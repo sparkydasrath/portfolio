@@ -1,0 +1,56 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* background-color: #252525; */
+}
+
+#actions {
+    display: flex;
+}
+
+#actions>button {
+    flex: auto;
+}
+
+#counts {
+    font-size: 1em;
+    color: darkgray;
+    text-align: center;
+}
+
+ul li {
+    list-style: none;
+}
+
+#input-text-wrapper {
+    display: flex;
+    flex: 2px;
+}
+
+#input-text {
+    flex: 1;
+    margin-top: 2px;
+    margin-bottom: 8px;
+}
+
+.rootContainer {
+    width: 50%;
+    margin: auto;
+}
+
+.todo-item-container {
+    display: flex;
+    align-items: center;
+}
+
+.todoText {
+    flex: 1;
+}
+
+.complete,
+.delete {
+    flex: 0.15;
+}
+
+.done {
+    /* background-color: darkgray; */
+}

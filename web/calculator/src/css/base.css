@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* general */
+    --main-bg-color: #1F1F1F;
+    --general-padding: 5px;
+    --font-color: rgba(255, 255, 255, 200);
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-size: 1rem;
+    /* display area */
+    --display-padding: 1px;
+    --display-vertical-align: baseline;
+    --display-text-align: right;
+    /*button specific*/
+    --button-operator-color: #131313;
+    --button-number-color: #060606;
+    --button-hover-color: rgba(207, 207, 207, 0.9);
+}
+
+body {
+    background-color: black;
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+    color: var(--font-color);
+}
+
+.outer-wrapper {
+    background-color: var(--main-bg-color);
+    min-width: 300px;
+    min-height: 350px;
+    width: 300px;
+    height: 350px;
+}
+
+.display-container {
+    padding: var(--display-padding);
+}
+
+.summary-display {
+    height: 1em;
+    text-align: var(--display-text-align);
+    vertical-align: var(--display-vertical-align);
+    color: #A3A3A3;
+    padding-right: 10px;
+    padding-bottom: 20px;
+}
+
+.result-display {
+    text-align: var(--display-text-align);
+    vertical-align: var(--display-vertical-align);
+    padding: 2px;
+    padding-right: 10px;
+}
+
+body .result-display {
+    font-size: 2.5em;
+}
+
+.outer-wrapper {
+    padding: var(--general-padding);
+    margin: auto;
+}
+
+.btn-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(75px, 1fr));
+    grid-template-rows: repeat(5, minmax(50px, 1fr));
+    align-items: stretch;
+    align-content: stretch;
+    justify-content: center;
+    grid-gap: 0;
+}
+
+.btn-border {
+    border: 0px solid darkgray;
+    margin: 1px;
+}
+
+.btn {
+    width: 100%;
+    height: 100%;
+    background-color: var(--button-number-color);
+    color: var(--font-color);
+    font-family: var(--font-family);
+    border: 0;
+}
+
+.btn-op {
+    background-color: var(--button-operator-color);
+}
+
+.btn:focus {
+    outline: 0;
+}
+
+.btn:hover {
+    background-color: var(--button-hover-color);
+    opacity: 0.7;
+    color: black;
+}

@@ -1,0 +1,41 @@
+{
+  "name": "ts_react_elect_wpack_v3",
+  "version": "1.0.0",
+  "author": "sparky.dasrath <sdasrath@gmail.com>",
+  "license": "MIT",
+  "main": "./dist/main.bundle.js",
+  "scripts": {
+    "start": "electron ./dist/main.bundle.js",
+    "dev": "webpack --config ./webpack.dev.js --progress --colors --enable-logging",
+    "prod": "webpack --config ./webpack.prod.js --progress --colors"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/node": "^10.5.7",
+    "awesome-typescript-loader": "^5.2.0",
+    "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^1.0.0",
+    "enzyme": "^3.3.0",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^23.4.2",
+    "node-sass": "^4.9.2",
+    "rimraf": "^2.6.2",
+    "sass-loader": "^7.1.0",
+    "source-map-loader": "^0.2.3",
+    "style-loader": "^0.21.0",
+    "ts-lint": "^4.5.1",
+    "tslint-loader": "^3.6.0",
+    "typescript": "^3.0.1",
+    "webpack": "^4.16.4",
+    "webpack-cli": "^3.1.0"
+  },
+  "dependencies": {
+    "@types/electron": "^1.6.10",
+    "@types/react": "^16.4.7",
+    "@types/react-dom": "^16.0.6",
+    "electron": "^2.0.6",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
+  }
+}

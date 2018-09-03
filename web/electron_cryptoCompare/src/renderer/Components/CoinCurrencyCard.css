@@ -1,0 +1,65 @@
+:root {
+    --main-bg-color: transparent;
+    --section-bg-color: #333333;
+    --card-border-color: #333333;
+    --leftMargin-5px: 0 0 0 5px;
+    --volContainerItemMargin: 5px;
+    --price-color-transition: color 1s;
+}
+
+.currencyCardRoot {
+    border: 1px solid;
+    border-color: var(--card-border-color);
+    background-color: var(--main-bg-color);
+    margin: 15px;
+}
+
+.priceCoinCurrencyContainer {
+    margin: 0 0 15px 0;
+}
+
+.coinCurrencyWrapper {
+    background-color: var(--section-bg-color);
+}
+
+.coinCurrency {
+    font-size: 1em;
+    padding: 0.25em;
+    font-weight: bold;
+    margin: var(-leftMargin-5px);
+}
+
+.price {
+    font-size: 3em;
+    margin: var(-leftMargin-5px);
+}
+
+.volumesContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: stretch;
+    background: linear-gradient(transparent, var(--section-bg-color));
+}
+
+.volContainerHeaderText {
+    margin: var(--volContainerItemMargin);
+    color: gray;
+}
+
+.volContainerValueText {
+    margin: var(--volContainerItemMargin);
+}
+
+.priceUp {
+    color: green;
+    transition: var(--price-color-transition);
+}
+
+.priceDown {
+    color: red;
+    transition: var(--price-color-transition);
+}
+
+.priceUnchanged {
+    color: white;
+}

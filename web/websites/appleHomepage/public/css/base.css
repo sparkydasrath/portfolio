@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+    color: white;
+}
+
+nav {
+    position: absolute;
+    top: 25px;
+    min-width: 1150px;
+}
+
+ul {
+    list-style: none;
+    font-size: 0;
+}
+
+ul>div {
+    margin: 0;
+    position: relative;
+    display: inline-block;
+    height: 35px;
+    width: 150px;
+    font-size: 16px;
+    background: #808080;
+    border: 0 solid darkgray;
+    text-align: center;
+    padding-top: 5px;
+    background: linear-gradient(#808080, #616161, #808080);
+    /* background: linear-gradient(bottom, #666 0, #5e5e5e 50%, #707070 51%, #808080 100%); */
+}
+
+ul>div:hover {
+    /* cursor: pointer; */
+    background: #454545;
+    border: 0;
+}
+
+ul>div:after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: calc(100% - 1px);
+    height: 50%;
+    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1));
+}
+
+ul>div:first-child {
+    border-width: 0 1px 0 0;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+ul>div:first-child::after {
+    border-top-left-radius: 4px;
+}
+
+#logo {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+}
+
+ul>div:last-child {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-width: 0 0 0 1px;
+}
+
+ul>div:last-child:after {
+    border-top-right-radius: 5px;
+    border: 0;
+}
+
+input {
+    width: 80%;
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    border-top: 2px solid rgb(60, 60, 60);
+    border-bottom: 1px solid rgb(160, 160, 160);
+    background: linear-gradient(rgb(140, 140, 140), rgb(110, 110, 110) 50%, rgb(90, 90, 90) 51%, rgb(130, 130, 130));
+    outline: none;
+    font-style: normal;
+    line-height: 1.5;
+}
+
+::placeholder {
+    color: darkgray;
+    position: relative;
+    left: 10px;
+}
+
+#mainContainer {
+    margin: 0 auto;
+    width: 95%;
+}
+
+#primary {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background: url("../../images/hero.jpg") 50% 100% / 1440px 1315px no-repeat;
+    background-size: 100%;
+    height: 75vh;
+}
+
+#promos {
+    display: flex;
+    flex: 1 1 auto;
+    flex-flow: row nowrap;
+    align-content: center;
+    align-items: center;
+}
+
+img {
+    width: 100%;
+}

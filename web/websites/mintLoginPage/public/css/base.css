@@ -1,0 +1,125 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ECEEF1;
+    line-height: 1.5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: #4C4C4C;
+}
+
+section {
+    border: 1px solid #C7C7C7;
+    border-radius: 0;
+    width: 380px;
+    margin: 0 auto;
+    background-color: #FFF;
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+.fa-leaf {
+    color: #00a6a4;
+}
+
+.fa-adn {
+    color: #2c9f1c;
+}
+
+.fa-check-circle {
+    color: red;
+}
+
+form {
+    color: #404040;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 300;
+    padding-bottom: 30px;
+    text-align: left;
+}
+
+#intuit {
+    font-size: 35px;
+    color: darkgray;
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+.brands {
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #E1E1E1;
+    letter-spacing: 1px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+#primary-header {
+    font-weight: 400;
+    font-size: 24px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#secondary-header {
+    font-size: 14px;
+    line-height: 1.2;
+    margin-bottom: 2em;
+}
+
+fieldset {
+    border: none;
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+}
+
+input {
+    width: 100%;
+}
+
+.register input {
+    display: block;
+    padding-left: 8px;
+    border-radius: 3px;
+    border: 1px solid #C1C5C8;
+    line-height: 1.3em;
+    font-size: 1.2em;
+    height: 34px;
+}
+
+.register input:focus {
+    border: 1px solid #52a8ec;
+    outline: 0;
+    border-color: rgba(82, 168, 236, 0.8);
+    box-shadow: 0 1px 5px rgba( 0, 0, 0, 0.075) inset, 0 0 8px rgba(82, 168, 236, 0.8);
+}
+
+.field-header {
+    padding-bottom: 6px;
+}
+
+button {
+    height: 44px;
+    background-color: #0077C5;
+    border-radius: 4px;
+    border: #0077C5;
+    color: #FFF;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 30px;
+}
