@@ -1,6 +1,6 @@
 ﻿namespace CryptoCompare.ViewModels
 {
-    public class CardViewModel : BaseViewModel
+    public class CurrencyCardVm : BaseViewModel
     {
     }
 }

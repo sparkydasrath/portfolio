@@ -1,4 +1,5 @@
 ﻿using CryptoCompare.Services;
+using CryptoCompare.ViewModels;
 
 namespace CryptoCompare
 {
@@ -7,12 +8,16 @@ namespace CryptoCompare
         public MainWindow()
         {
             InitializeComponent();
-            GetCoinsAndCurrencies();
+            MainVm mv = new MainVm();
+            DataContext = mv;
+            mv.Initialize();
+
+            // GetCoinsAndCurrencies();
         }
 
         private async void GetCoinsAndCurrencies()
         {
-            RestDataFetcher rdf = new RestDataFetcher();
+            DataFetcher rdf = new DataFetcher();
             string result = await rdf.GetThings();
             MyTextBox.AppendText(result);
         }

@@ -72,9 +72,12 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Properties\Annotations.cs" />
-    <Compile Include="Services\RestDataFetcher.cs" />
+    <Compile Include="Services\DataFetcher.cs" />
+    <Compile Include="Services\ResponseConverter.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />
-    <Compile Include="ViewModels\CardViewModel.cs" />
+    <Compile Include="ViewModels\Currency.cs" />
+    <Compile Include="ViewModels\CurrencyCardVm.cs" />
+    <Compile Include="ViewModels\MainVm.cs" />
     <Compile Include="Views\CardView.xaml.cs">
       <DependentUpon>CardView.xaml</DependentUpon>
     </Compile>

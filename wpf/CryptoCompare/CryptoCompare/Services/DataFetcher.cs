@@ -2,14 +2,15 @@
 using System.Configuration;
 using System.Net.Http;
 using System.Threading.Tasks;
+using Newtonsoft.Json.Linq;
 
 namespace CryptoCompare.Services
 {
-    public class RestDataFetcher
+    public class DataFetcher
     {
         private readonly string url;
 
-        public RestDataFetcher()
+        public DataFetcher()
         {
             string baseUrl = ConfigurationManager.AppSettings["url"];
             string coins = ConfigurationManager.AppSettings["coins"];
@@ -20,7 +21,9 @@ namespace CryptoCompare.Services
         public async Task<string> GetThings()
         {
             HttpClient client = new HttpClient();
-            string response = await client.GetStringAsync(new Uri(url));
+            string response = await client.GetStringAsync(new Uri(url)).ConfigureAwait(false);
+
+            JObject o = JObject.Parse(response);
 
             return response;
         }
