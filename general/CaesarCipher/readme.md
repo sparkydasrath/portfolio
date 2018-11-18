@@ -20,7 +20,7 @@ I approach I used was:
 * get ASCII code of current character
 * if it is a symbol, do nothing
 * if it is a number or upper/lower case letter
-..* apply shift
-..* if necessary, apply wrapping logic
+	- apply shift
+	- if necessary, apply wrapping logic
 
 This was used to do both the encrypt and decrypt operations and both were supported by several helper methods.
