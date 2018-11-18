@@ -18,3 +18,8 @@ The projects described below are the 'final' versions (for demo purposes) achiev
 
 5. [Websites](https://github.com/sparkydasrath/demo/tree/master/web/websites) (Mint, Apple (older version)) - These are non-functioning sites for the lessons in the HTML & CSS part of [The Odin Project](https://www.theodinproject.com/). 
 
+6. [WPF](https://github.com/sparkydasrath/portfolio/tree/master/wpf/CryptoCompare) - starter project to extend the crypto app onto the WPF platform
+
+7. General
+* [Caesar Cipher](https://github.com/sparkydasrath/portfolio/tree/master/general/CaesarCipher) - A simple TDD approach to the solving this problem
+
