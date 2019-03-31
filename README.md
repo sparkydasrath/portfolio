@@ -20,6 +20,8 @@ The projects described below are the 'final' versions (for demo purposes) achiev
 
 6. [WPF](https://github.com/sparkydasrath/portfolio/tree/master/wpf/CryptoCompare) - starter project to extend the crypto app onto the WPF platform
 
-7. General
+7. [Blockchain](https://github.com/sparkydasrath/portfolio/tree/master/blockchain/BasicBlockchain) - Simple implemenation of a blockchain
+
+8. General
 - [Caesar Cipher](https://github.com/sparkydasrath/portfolio/tree/master/general/CaesarCipher) - A simple TDD approach to the solving this problem
 
