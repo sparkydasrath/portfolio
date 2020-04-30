@@ -12,7 +12,7 @@
   "dependencies": {
     "@types/jquery": "^3.3.3",
     "handlebars": "^4.0.11",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "mdbootstrap": "^4.5.5"
   }
 }
